@@ -2,91 +2,88 @@
 layout: default
 ---
 
-<div class="container" style="background-color: white">
-    <div style="padding: 60px 50px 15px; background-color: #3875b5" class="text-white">
-        <p class="mt-5 lead" style="font-size: 35px;"><span style="font-weight: 450;">{{ site.title }}</span> - Open
-            Computer
-            Science Ontology</p>
-        <hr>
-        <p class="lead">
-            {{ site.description }}
-        </p>
-        <p class="lead">
-            <code class="small" style="color: aliceblue">Version {{ page.version }}, {{ page.date }}</code>
-        </p>
+
+<div style="padding: 60px 50px 15px; background-color: #3875b5" class="text-white">
+    <p class="mt-5 lead" style="font-size: 35px;"><span style="font-weight: 450;">{{ site.title }}</span> - Open
+        Computer
+        Science Ontology</p>
+    <hr>
+    <p class="lead">
+        {{ site.description }}
+    </p>
+    <p class="lead">
+        <code class="small" style="color: aliceblue">Version {{ page.version }}, {{ page.date }}</code>
+    </p>
+</div>
+
+<div class="row g-5 p-5">
+    <div class="col-md-6">
+        <h2>Download links</h2>
+        <hr class="col-md-8">
+        <!--                <p>Download </p>-->
+        <div style="padding: 20px 0 40px">
+            <a class="btn btn-outline-primary"
+               href="https://github.com/OpenCS-ontology/OpenCS/releases/latest/download/opencs.rdf.gz"
+               target="_blank">
+                Download .rdf
+            </a><a class="btn btn-outline-primary"
+                   href="https://github.com/OpenCS-ontology/OpenCS/releases/latest/download/opencs.nt.gz"
+                   target="_blank">
+            Download .nt
+        </a><a class="btn btn-outline-primary"
+               href="https://github.com/OpenCS-ontology/OpenCS/releases/latest/download/opencs.ttl.gz"
+               target="_blank">
+            Download .ttl
+        </a>
+        </div>
+
+        <div>
+            <a class="btn btn-secondary" href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener"
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                {%- if page.previous_version -%}
+                Previous version {{ page.previous_version }}
+                {%- endif -%}
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener"
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+                {%- if page.next_version -%}
+                Next version {{ page.next_version }}
+                {%- endif -%}
+            </a>
+        </div>
     </div>
 
-    <div class="row g-5 p-5">
-        <div class="col-md-6">
-            <h2>Download links</h2>
-            <hr class="col-md-8">
-            <!--                <p>Download </p>-->
-            <div style="padding: 20px 0 40px">
-                <a class="btn btn-outline-primary"
-                   href="https://github.com/OpenCS-ontology/OpenCS/releases/latest/download/opencs.rdf.gz"
-                   target="_blank">
-                    Download .rdf
-                </a><a class="btn btn-outline-primary"
-                       href="https://github.com/OpenCS-ontology/OpenCS/releases/latest/download/opencs.nt.gz"
-                       target="_blank">
-                Download .nt
-            </a><a class="btn btn-outline-primary"
-                   href="https://github.com/OpenCS-ontology/OpenCS/releases/latest/download/opencs.ttl.gz"
-                   target="_blank">
-                Download .ttl
-            </a>
-            </div>
+    <div class="col-md-6">
 
-            <div>
-                <a class="btn btn-secondary" href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener"
-                   target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-arrow-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                    </svg>
-                    {%- if page.previous_version -%}
-                    Previous version {{ page.previous_version }}
-                    {%- endif -%}
-                </a>
-                <a class="btn btn-secondary" href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener"
-                   target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                    {%- if page.next_version -%}
-                    Next version {{ page.next_version }}
-                    {%- endif -%}
-                </a>
-            </div>
+        <h2>Related pages</h2>
+        <hr class="col-md-8">
+        <!--                <p> Pages related to the ontology </p>-->
+        <div style="padding: 20px 0 40px">
+            <p><a class="btn btn-outline-secondary" href="../getting-started/introduction/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+                Github repository
+            </a></p>
+            <p><a class="btn btn-outline-secondary" href="../getting-started/webpack/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+                Schema</a></p>
         </div>
-
-        <div class="col-md-6">
-
-            <h2>Related pages</h2>
-            <hr class="col-md-8">
-            <!--                <p> Pages related to the ontology </p>-->
-            <div style="padding: 20px 0 40px">
-                <p><a class="btn btn-outline-secondary" href="../getting-started/introduction/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                    Github repository
-                </a></p>
-                <p><a class="btn btn-outline-secondary" href="../getting-started/webpack/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                    Schema</a></p>
-            </div>
-
-        </div>
-
     </div>
 </div>
