@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% for ver in page.versions %}
+<p>
+    ver
+</p>
+{%- if forloop.last == false %}, {% endif -%}
+{% endfor %}
