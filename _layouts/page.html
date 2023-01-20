@@ -4,14 +4,14 @@ layout: default
 
 <div class="container" style="background-color: white">
         <div style="padding: 60px 50px 15px; background-color: #3875b5" class="text-white">
-            <p class="mt-5 lead" style="font-size: 35px;"><span style="font-weight: 450;">OpenCS</span> - Open Computer
+            <p class="mt-5 lead" style="font-size: 35px;"><span style="font-weight: 450;">{{ page.title }}</span> - Open Computer
                 Science Ontology</p>
             <hr>
             <p class="lead">
-                Some short description of the ontology.
+                {{ page.description }}
             </p>
             <p class="lead">
-                <code class="small" style="color: aliceblue">Version 1.0.0</code>
+                <code class="small" style="color: aliceblue">Version {{ page.version }, {{ page.date }}</code>
             </p>
         </div>
 
@@ -44,7 +44,12 @@ layout: default
                             <path fill-rule="evenodd"
                                   d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                         </svg>
-                        Previous version
+                        {%- if page.previous_version -%}
+                            Previous version {{ page.previous_version }}
+                        {%- endif -%}
+                        {%- if page.next_version -%}
+                            Next version {{ page.next_version }}
+                        {%- endif -%}
                     </a>
                 </div>
             </div>
