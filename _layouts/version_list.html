@@ -4,7 +4,7 @@ layout: default
 
 {% for ver in page.versions %}
 <p>
-    ver
+    {{ page.ver }}
+    {%- if forloop.last == false %}, {% endif -%}
 </p>
-{%- if forloop.last == false %}, {% endif -%}
 {% endfor %}
