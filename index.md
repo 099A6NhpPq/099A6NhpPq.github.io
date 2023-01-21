@@ -1,6 +1,4 @@
 ---
-layout: page
-date: 20.01.2023
-version: 1.0.1
-previous_version: 1.0.0
+layout: redirected
+redirect_to:  https://opencs-ontology.github.io/releases/stable/index
 ---
