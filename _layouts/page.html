@@ -1,6 +1,5 @@
 ---
 layout: default
-title: site.title - Version site.version
 ---
 
 <div class="text-white container-primary">
@@ -23,22 +22,22 @@ title: site.title - Version site.version
         <hr class="col-md-8">
         <div class="button-container">
             <a class="btn btn-outline-primary me-2" target="_blank"
-               href="#">
+               href="opencs.rdf">
                 Download .rdf
             </a>
             <a class="btn btn-outline-primary me-2" target="_blank"
-               href="#">
+               href="opencs.nt">
                 Download .nt
             </a>
             <a class="btn btn-outline-primary" target="_blank"
-               href="#">
+               href="opencs.ttl">
                 Download .ttl
             </a>
         </div>
         {%- if page.previous_version -%}
         <div>
             <a class="btn btn-secondary"
-               href="#">
+               href="/releases/{{ page.previous_version }}/index.md">
                 <i class="material-icons arrow">arrow_back</i>
                 Previous version {{ page.previous_version }}
             </a>
@@ -51,14 +50,19 @@ title: site.title - Version site.version
         <hr class="col-md-8">
         <div class="button-container">
             <p><a class="btn btn-outline-secondary" target="_blank"
-                  href="#">
+                  href="https://github.com/OpenCS-ontology/OpenCS">
                 <i class="material-icons arrow">arrow_forward</i>
                 Github repository
             </a></p>
             <p><a class="btn btn-outline-secondary" target="_blank"
-                  href="#">
+                  href="https://github.com/OpenCS-ontology/OpenCS/wiki/">
                 <i class="material-icons arrow">arrow_forward</i>
-                Schema
+                Documentation
+            </a></p>
+            <p><a class="btn btn-outline-secondary" target="_blank"
+                  href="https://creativecommons.org/licenses/by/4.0/">
+                <i class="material-icons arrow">arrow_forward</i>
+                License
             </a></p>
         </div>
     </div>
