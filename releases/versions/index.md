@@ -1,7 +1,8 @@
 ---
-latest_stable: 0.8.3
+latest_stable: 0.9.0
 layout: version_list
 versions:
+- 0.9.0
 - 0.8.3
 - 0.8.2
 - 0.8.1
@@ -10,7 +11,6 @@ versions:
 - 0.5.1
 - 0.3.18
 - 0.3.17
-- Development build
 - 0.2.5
 - 0.2.4
 - 0.2.3
