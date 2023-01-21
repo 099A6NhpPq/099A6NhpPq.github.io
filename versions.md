@@ -1,7 +1,8 @@
 ---
 layout: version_list
+latest_stable: 1.0.2
 versions:
-- 1.0.0
-- 1.0.1
 - 1.0.2
+- 1.0.1
+- 1.0.0
 ---
