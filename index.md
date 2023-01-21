@@ -1,4 +1,4 @@
 ---
 layout: redirected
-redirect_to:  /releases/stable/index.md
+redirect_to:  /releases/stable/index
 ---
